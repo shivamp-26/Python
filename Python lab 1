@@ -1,0 +1,114 @@
+#1.
+import sys 
+print(f"The Python version is: ", sys.version)
+
+
+#2.
+import keyword 
+print("Keywords are: ", keyword.kwlist)
+
+
+#3.
+print("Enter your name ") 
+x=str(input()) print("Enter your age ") 
+a=int(input())
+
+b=100-a 
+print("You will turn 100 years by the year", 2024+b)
+
+
+#4.
+import math
+
+print(“Enter the radius of circle “)
+r=float(input())
+a=math.pi*r**2 
+print("Area of circle is ",a)
+
+
+#5.
+print("Enter a number to check for enev or odd ")
+n=int(input())
+
+if(n%2==0): 
+    print(f"No. {n} is even") 
+else: 
+    print(f"No. {n} is odd")
+
+
+#6.
+if 0.2+0.1 == 0.3: 
+    print("True")
+else:
+    print("False")
+
+from decimal import*
+
+getcontext().prec=10 
+print("Correct one is: ")
+
+if Decimal("0.2") + Decimal("0.1")==Decimal("0.3"):
+    print("True")
+else:
+    print("False")
+
+
+#7.
+print("Enter the first string: ")
+x=str(input())
+print("Enter the second string: ")
+y=str(input())
+
+l1=len(x)
+l2=len(y)
+
+k=x[1]+x[0] 
+i=2
+while 1<l1: 
+    k=k+x[i]
+    i+=1
+
+k=k+" "+y[1]+[0]
+j=2
+while j<l2 
+    k=k+y[j]
+    j+=1
+print("The addition of the two string with first two letters swapped is: “,k)
+
+
+#8.
+import keyword
+print("Enter a string ") 
+s=str(input())
+
+list=keword.kwlist
+
+if s in list:
+    print("The string is not a valid identifier")
+elif s.isidentifier(): 
+    print("The string is valid identifier")
+else:
+    print("The string is not a valid identifier")
+
+
+
+
+
+#9.
+print("Enter the string") 
+x=str(input())
+
+y=x[-1]
+i=1 
+for i in range(1,len(x)-1): 
+    y=y+x[i] 
+y=y+x[0] 
+print("The string is ",y)
+
+
+#10.
+print("Enter the string") 
+x=str(input())
+
+print(x.upper()) 
+print(x.lower())
