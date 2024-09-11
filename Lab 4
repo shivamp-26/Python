@@ -1,0 +1,104 @@
+#1.
+x=int(input("Enter no. of numbers for factorial "))
+l=[]
+for i in range(x):
+    n=int(input("Enter number "))
+    l.append(n)
+
+def factorial(n):
+    c=1
+    for i in range(1,n+1):
+        c*=i
+    return c
+
+print("Factorial = ",end='')   
+for j in range(x):
+    f=factorial(l[j])
+    if j==x-1:
+        print(f,end=" ")
+    else:
+        print(f,",",end=" ")
+
+#2.
+a=input("Enter comma seprated values ")
+b=a.split(',')
+
+print("List : ",b)
+print("Tuple: ",tuple(b))
+
+
+#3.
+a=input("Enter comma seprated values ")
+d=a.split(',')
+
+import math
+
+def value(x):
+    C=50 
+    H=30
+    Q=math.sqrt((2*C*x)/H)
+    return Q
+
+print("Values = ",end='')
+for i in d:
+    D=int(i)
+    print(math.floor(value(D)) , end=" ")
+
+#4.
+a=input("Enter comma seprated strings ")
+d=a.split(',')
+d.sort()
+
+for i in range(len(d)):
+    if i==len(d)-1:
+        print(d[i] ,end='')
+    else:
+        print(d[i],",",end="")    
+
+#5.
+a=input("Enter 4 digit no. ")
+b=a.split(',')
+for i in b:
+    x=i[::-1]
+    k=0
+    d=0
+    for j in x:
+        if(j=='1'): 
+            d+=2**k
+        k+=1
+    if(d%5==0): 
+        print(i,end='')
+
+#6.
+list_ = [[5,6],[4,7,10,17]]
+l=[]
+t=()
+for i in list_:
+    for j in i:
+        t=(j,)
+        l.append(t)
+print(l)
+
+#7.
+l=[('John',20,90), ('tom',19,80), ('Jony',17,91), ('Jony',17,93), ('Json',21,85)]
+
+a=sorted(l, key=lambda x:(x[0],x[1],x[2]))
+print(a)
+
+#8.
+
+#9.
+a=input("enter the string : ")
+d={ }
+x=a.split(' ')
+x.sort()
+
+for i in x:
+    if i not in d:
+        d[i]=1
+    else:
+        d[i]+=1
+
+print(d)
+
+#10.
